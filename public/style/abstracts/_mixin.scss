@@ -1,0 +1,20 @@
+@use "./maps" as *;
+
+@mixin grid(
+  $col,
+  $gutter: 30px,
+  $justify-content: center,
+  $align-content: center
+) {
+  display: grid;
+  grid-template-columns: repeat($col, 1fr);
+  gap: $gutter;
+  justify-content: $justify-content;
+  align-content: $align-content;
+}
+
+@mixin mq($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}

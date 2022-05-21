@@ -1,0 +1,160 @@
+@use "./../variables/" as *;
+@use "./../abstracts/" as *;
+
+.overlay {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  animation: showOverlay 0.5s ease-in-out;
+  @keyframes showOverlay {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.header {
+  .navbar--top {
+    font-size: 0.8rem;
+    padding: 1em 0;
+    border-bottom: 1px solid rgba(149, 214, 102, 0.63);
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__left {
+      display: flex;
+      &__box {
+        &__icon {
+          margin-right: 0.25em;
+        }
+        &:first-child {
+          margin-right: 30px;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            height: 1px;
+            width: 10px;
+            background: black;
+          }
+        }
+        &.mail {
+          a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .navbar--bottom {
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__list {
+      display: none;
+      list-style: none;
+      &__item {
+        font-size: 0.9rem;
+        &:not(:last-child) {
+          margin-right: 16px;
+        }
+        &__link {
+          text-decoration: none;
+          color: black;
+          &:hover {
+            color: $theme-green;
+          }
+          &.active {
+            color: $theme-green;
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+          &.cart {
+            & > * {
+              display: inline-block;
+            }
+            .shopping-icon {
+              margin-right: 0.25em;
+            }
+          }
+        }
+      }
+    }
+    @include mq(xl) {
+      &__list {
+        display: flex;
+      }
+      &__hamburger {
+        display: none;
+      }
+    }
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background: white;
+  z-index: 100000000000000000;
+  animation: openSidebar 500ms ease-in-out;
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+    &__item {
+      padding: 1em;
+      display: block;
+      transition: 200ms ease-in-out;
+      text-decoration: none;
+      &:hover {
+        background: $yellow-clr;
+      }
+      border-bottom: 1px solid rgba(149, 214, 102, 0.63);
+      &:first-child {
+        border-top: 1px solid rgba(149, 214, 102, 0.63);
+      }
+      &__link {
+        text-decoration: none;
+        color: black;
+        &.active {
+          color: $theme-green;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        &:hover {
+          color: $theme-green;
+        }
+        &.active {
+          color: $theme-green;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  @keyframes openSidebar {
+    from {
+      right: -100%;
+    }
+  }
+}

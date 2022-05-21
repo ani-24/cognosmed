@@ -1,0 +1,11 @@
+@use "./../abstracts/" as *;
+
+.grid {
+  @include grid(1);
+  @include mq(md) {
+    @include grid(2);
+  }
+  @include mq(lg) {
+    @include grid(var(--col));
+  }
+}
