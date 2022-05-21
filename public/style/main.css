@@ -26,7 +26,10 @@ img {
   margin-right: auto;
   padding: 0 25px;
 }
-@media (min-width: 768px) {
+[class*=inner] [class*=inner] {
+  width: 100%;
+}
+@media (min-width: 576px) {
   [class*=inner] [class*=inner] {
     width: 80%;
   }
