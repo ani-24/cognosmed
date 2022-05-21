@@ -57,7 +57,11 @@ const Footer = () => {
                   className="footer-col__list__item"
                   style={{ margin: "50px 0" }}
                 >
-                  <a href="#" className="footer-col__list__item__link">
+                  <a
+                    href="#"
+                    className="footer-col__list__item__link"
+                    aria-describedby="payment-secured"
+                  >
                     <img src="./img/payment-secured.webp" alt="" />
                   </a>
                 </li>
@@ -93,22 +97,25 @@ const Footer = () => {
           <ul className="footer-follow__list">
             <li className="footer-follow__list__item">
               <a href="#" className="footer-follow__list__item__link">
-                <i className="fab fa-facebook"></i>
+                <i className="fab fa-facebook" aria-describedby="facebook"></i>
               </a>
             </li>
             <li className="footer-follow__list__item">
               <a href="#" className="footer-follow__list__item__link">
-                <i className="fab fa-twitter"></i>
+                <i className="fab fa-twitter" aria-describedby="twitter"></i>
               </a>
             </li>
             <li className="footer-follow__list__item">
               <a href="#" className="footer-follow__list__item__link">
-                <i className="fab fa-pinterest"></i>
+                <i
+                  className="fab fa-pinterest"
+                  aria-describedby="pinterest"
+                ></i>
               </a>
             </li>
             <li className="footer-follow__list__item">
               <a href="#" className="footer-follow__list__item__link">
-                <i className="fab fa-linkedin"></i>
+                <i className="fab fa-linkedin" aria-describedby="linkedin"></i>
               </a>
             </li>
           </ul>
