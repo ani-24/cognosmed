@@ -25,10 +25,4 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 0 25px;
-  [class*="inner"] {
-    width: 100%;
-    @media (min-width: 576px) {
-      width: 80%;
-    }
-  }
 }
