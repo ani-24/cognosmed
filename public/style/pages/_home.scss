@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   background: white;
+  margin-bottom: 1em;
   .hero-section-inner {
     @media (max-width: 768px) {
       width: 80%;
@@ -40,7 +41,7 @@ section {
 
 .certifications {
   .grid {
-    @media (max-width: 768px) and (min-width: 576px) {
+    @media (max-width: 576px) {
       @include grid(2);
     }
   }

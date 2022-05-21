@@ -26,9 +26,18 @@ img {
   margin-right: auto;
   padding: 0 25px;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   [class*=inner] [class*=inner] {
     width: 80%;
+  }
+}
+
+html {
+  font-size: 10px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
   }
 }
 
@@ -384,16 +393,6 @@ body {
   position: relative;
   display: inline-block;
 }
-.testimonial__body__author::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  height: 1px;
-  width: 50px;
-  background: black;
-  transform: translateX(-150%);
-}
 
 .footer {
   background: hsla(206deg, 50%, 36%, 0.96);
@@ -468,6 +467,7 @@ body {
   display: flex;
   align-items: center;
   background: white;
+  margin-bottom: 1em;
 }
 @media (max-width: 768px) {
   .hero-section .hero-section-inner {
@@ -500,7 +500,7 @@ section {
   background: black;
 }
 
-@media (max-width: 768px) and (min-width: 576px) {
+@media (max-width: 576px) {
   .certifications .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
