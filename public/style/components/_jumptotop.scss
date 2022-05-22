@@ -1,0 +1,21 @@
+@use "./../variables/" as *;
+
+.jump-to-top {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $theme-green;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 5px;
+  z-index: 9999;
+  cursor: pointer;
+  color: white;
+  transition: 100ms ease-in-out;
+  &:hover {
+    background: darken($color: $theme-green, $amount: 5%);
+  }
+}

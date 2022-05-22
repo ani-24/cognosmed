@@ -466,6 +466,26 @@ body {
   font-size: 0.8rem;
 }
 
+.jump-to-top {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f7e15;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 5px;
+  z-index: 9999;
+  cursor: pointer;
+  color: white;
+  transition: 100ms ease-in-out;
+}
+.jump-to-top:hover {
+  background: #0c6711;
+}
+
 .hero-section {
   min-height: 80vh;
   display: flex;

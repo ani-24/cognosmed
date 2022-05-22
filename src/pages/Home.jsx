@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Footer from "../components/Footer";
+import JumpToTop from "../components/JumpToTop";
 
 const HeroSection = () => {
   return (
@@ -414,6 +415,7 @@ const Home = () => {
       <Testimonials />
       <Blog />
       <Footer />
+      <JumpToTop />
     </>
   );
 };
