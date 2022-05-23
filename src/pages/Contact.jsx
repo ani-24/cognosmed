@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "./../components/Footer";
+import JumpToTop from "./../components/JumpToTop";
 
 const MainSection = () => {
   return (
@@ -82,6 +83,7 @@ const Contact = () => {
       <MainSection />
       <Map />
       <Footer />
+      <JumpToTop />
     </>
   );
 };
