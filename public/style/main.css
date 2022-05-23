@@ -522,6 +522,7 @@ form .input-field .input::placeholder {
 form .input-field .input:focus + .label, form .input-field .input:valid + .label {
   top: 0;
   left: 1em;
+  font-size: 0.8rem;
 }
 form .input-field.textarea {
   height: auto;
@@ -534,7 +535,7 @@ form .input-field .label {
   position: absolute;
   top: 30px;
   left: 1.5em;
-  font-size: 16px;
+  font-size: 1rem;
   pointer-events: none;
   background: white;
   transform: translateY(-50%);
