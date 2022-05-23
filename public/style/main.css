@@ -399,7 +399,7 @@ body {
 }
 
 .footer {
-  background: hsla(206deg, 50%, 36%, 0.96);
+  background: #131313;
   padding: 3rem 0;
   color: white;
   margin-top: 1em;
@@ -434,7 +434,7 @@ body {
   text-decoration: none;
 }
 .footer .footer-follow {
-  background: hsla(206deg, 50%, 30%, 0.96);
+  background: #1a1a1a;
   padding: 1.5rem 0;
   margin-top: 1em;
 }
@@ -465,6 +465,9 @@ body {
   padding-top: 2em;
   text-align: center;
   font-size: 0.8rem;
+}
+.footer .footer-bottom__link {
+  color: #ccc;
 }
 
 .jump-to-top {

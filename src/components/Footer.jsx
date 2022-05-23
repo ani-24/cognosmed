@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -14,24 +14,24 @@ const Footer = () => {
               <h3>Information</h3>
               <ul className="footer-col__list">
                 <li className="footer-col__list__item">
-                  <a href="#" className="footer-col__list__item__link">
+                  <Link to="/" className="footer-col__list__item__link">
                     Products & Services
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer-col__list__item">
-                  <a href="#" className="footer-col__list__item__link">
+                  <Link to="/" className="footer-col__list__item__link">
                     Contact us
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer-col__list__item">
-                  <a href="#" className="footer-col__list__item__link">
+                  <Link to="/" className="footer-col__list__item__link">
                     About us
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer-col__list__item">
-                  <a href="#" className="footer-col__list__item__link">
+                  <Link to="/" className="footer-col__list__item__link">
                     Career
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -39,19 +39,19 @@ const Footer = () => {
               <h3>Useful Links</h3>
               <ul className="footer-col__list">
                 <li className="footer-col__list__item">
-                  <a href="#" className="footer-col__list__item__link">
+                  <Link to="/" className="footer-col__list__item__link">
                     Returns
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer-col__list__item">
-                  <a href="#" className="footer-col__list__item__link">
+                  <Link to="/" className="footer-col__list__item__link">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li className="footer-col__list__item">
-                  <a href="#" className="footer-col__list__item__link">
+                  <Link to="/" className="footer-col__list__item__link">
                     Terms & Conditions
-                  </a>
+                  </Link>
                 </li>
                 <li
                   className="footer-col__list__item"
@@ -96,34 +96,43 @@ const Footer = () => {
           <h3>Follow us</h3>
           <ul className="footer-follow__list">
             <li className="footer-follow__list__item">
-              <a href="#" className="footer-follow__list__item__link">
+              <Link to="/" className="footer-follow__list__item__link">
                 <i className="fab fa-facebook" aria-describedby="facebook"></i>
-              </a>
+              </Link>
             </li>
             <li className="footer-follow__list__item">
-              <a href="#" className="footer-follow__list__item__link">
+              <Link to="/" className="footer-follow__list__item__link">
                 <i className="fab fa-twitter" aria-describedby="twitter"></i>
-              </a>
+              </Link>
             </li>
             <li className="footer-follow__list__item">
-              <a href="#" className="footer-follow__list__item__link">
+              <Link to="/" className="footer-follow__list__item__link">
                 <i
                   className="fab fa-pinterest"
                   aria-describedby="pinterest"
                 ></i>
-              </a>
+              </Link>
             </li>
             <li className="footer-follow__list__item">
-              <a href="#" className="footer-follow__list__item__link">
+              <Link to="/" className="footer-follow__list__item__link">
                 <i className="fab fa-linkedin" aria-describedby="linkedin"></i>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
       </div>
       <div className="footer-bottom">
         <div className="footer-inner">
-          <p>Copyright © 2022 Cognosmed® | Powered by Cognosmed®</p>
+          <p>
+            Copyright © 2022 Cognosmed® | Powered by Cognosmed® | Website
+            developed by{" "}
+            <Link
+              to="https://code-it-web.herokuapp.com/"
+              className="footer-bottom__link"
+            >
+              CodeIt
+            </Link>
+          </p>
         </div>
       </div>
     </footer>
