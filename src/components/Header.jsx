@@ -1,33 +1,34 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <ul className="sidebar__list">
-        <a href="#" className="sidebar__list__item">
+        <Link to="/" className="sidebar__list__item">
           <li className="sidebar__list__item__link active">Home</li>
-        </a>
-        <a href="#" className="sidebar__list__item">
+        </Link>
+        <Link to="/" className="sidebar__list__item">
           <li className="sidebar__list__item__link">About us</li>
-        </a>
-        <a href="#" className="sidebar__list__item">
+        </Link>
+        <Link to="/" className="sidebar__list__item">
           <li className="sidebar__list__item__link">Research & Development</li>
-        </a>
-        <a href="#" className="sidebar__list__item">
+        </Link>
+        <Link to="/" className="sidebar__list__item">
           <li className="sidebar__list__item__link">Products & Services</li>
-        </a>
-        <a href="#" className="sidebar__list__item">
+        </Link>
+        <Link to="/" className="sidebar__list__item">
           <li className="sidebar__list__item__link">Ayurveda eClinic</li>
-        </a>
-        <a href="#" className="sidebar__list__item">
+        </Link>
+        <Link to="/" className="sidebar__list__item">
           <li className="sidebar__list__item__link">Shop</li>
-        </a>
-        <a href="#" className="sidebar__list__item">
+        </Link>
+        <Link to="/" className="sidebar__list__item">
           <li className="sidebar__list__item__link">My Account</li>
-        </a>
-        <a href="#" className="sidebar__list__item">
+        </Link>
+        <Link to="/contact" className="sidebar__list__item">
           <li className="sidebar__list__item__link">Contact us</li>
-        </a>
+        </Link>
       </ul>
     </div>
   );
@@ -62,56 +63,62 @@ const Header = () => {
         </div>
         <div className="navbar--bottom">
           <div className="navbar--bottom-inner">
-            <a href="#" className="navbar--bottom__logo">
+            <Link to="/" className="navbar--bottom__logo">
               <img src="./img/logo.webp" alt="Cognosmed" />
-            </a>
+            </Link>
             {/* Create an unordered list with 9 list items and inside every time their should be anchor tags */}
             <ul className="navbar--bottom__list">
               <li className="navbar--bottom__list__item">
-                <a href="#" className="navbar--bottom__list__item__link active">
+                <Link
+                  className="navbar--bottom__list__item__link active"
+                  to="/"
+                >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="navbar--bottom__list__item">
-                <a href="#" className="navbar--bottom__list__item__link">
-                  About us
-                </a>
+                <Link className="navbar--bottom__list__item__link" to="/">
+                  <a>About us</a>
+                </Link>
               </li>
               <li className="navbar--bottom__list__item">
-                <a href="#" className="navbar--bottom__list__item__link">
-                  Research & Development
-                </a>
+                <Link className="navbar--bottom__list__item__link" to="/">
+                  <a>Research & Development</a>
+                </Link>
               </li>
               <li className="navbar--bottom__list__item">
-                <a href="#" className="navbar--bottom__list__item__link">
-                  Product & Services
-                </a>
+                <Link className="navbar--bottom__list__item__link" to="/">
+                  <a>Product & Services</a>
+                </Link>
               </li>
               <li className="navbar--bottom__list__item">
-                <a href="#" className="navbar--bottom__list__item__link">
-                  Ayerveda eClinic
-                </a>
+                <Link className="navbar--bottom__list__item__link" to="/">
+                  <a>Ayerveda eClinic</a>
+                </Link>
               </li>
               <li className="navbar--bottom__list__item">
-                <a href="#" className="navbar--bottom__list__item__link">
-                  Shop
-                </a>
+                <Link className="navbar--bottom__list__item__link" to="/">
+                  <a>Shop</a>
+                </Link>
               </li>
               <li className="navbar--bottom__list__item">
-                <a href="#" className="navbar--bottom__list__item__link">
-                  My Account
-                </a>
+                <Link className="navbar--bottom__list__item__link" to="/">
+                  <a>My Account</a>
+                </Link>
               </li>
               <li className="navbar--bottom__list__item">
-                <a href="#" className="navbar--bottom__list__item__link">
-                  Contact us
-                </a>
+                <Link
+                  className="navbar--bottom__list__item__link"
+                  to="/contact"
+                >
+                  <a>Contact us</a>
+                </Link>
               </li>
               <li className="navbar--bottom__list__item">
-                <a href="#" className="navbar--bottom__list__item__link cart">
+                <Link to="/" className="navbar--bottom__list__item__link cart">
                   <i className="fas fa-shopping-bag shopping-icon fa-lg"></i>
                   <div className="counter">0</div>
-                </a>
+                </Link>
               </li>
             </ul>
             {/* Add a hamburger menu icon */}

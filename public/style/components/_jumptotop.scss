@@ -6,16 +6,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $theme-green;
+  // background: $theme-green;
+  background: #ccc;
   position: fixed;
   bottom: 20px;
   right: 20px;
   border-radius: 5px;
   z-index: 9999;
   cursor: pointer;
-  color: white;
+  color: black;
   transition: 100ms ease-in-out;
   &:hover {
-    background: darken($color: $theme-green, $amount: 5%);
+    background: darken($color: #ccc, $amount: 5%);
   }
 }

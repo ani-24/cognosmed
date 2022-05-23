@@ -402,6 +402,7 @@ body {
   background: hsla(206deg, 50%, 36%, 0.96);
   padding: 3rem 0;
   color: white;
+  margin-top: 1em;
 }
 .footer .footer__top .footer-logo {
   width: 200px;
@@ -472,18 +473,91 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #0f7e15;
+  background: #ccc;
   position: fixed;
   bottom: 20px;
   right: 20px;
   border-radius: 5px;
   z-index: 9999;
   cursor: pointer;
-  color: white;
+  color: black;
   transition: 100ms ease-in-out;
 }
 .jump-to-top:hover {
-  background: #0c6711;
+  background: #bfbfbf;
+}
+
+form .input-field {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 1em;
+}
+form .input-field .input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  background: transparent;
+  font-family: inherit;
+  font-size: 0.8rem;
+  transition: border 300ms ease-in-out;
+  padding-left: 2em;
+  border-radius: 5px;
+}
+form .input-field .input:focus {
+  border: 1px solid #000;
+}
+form .input-field .input::-moz-placeholder {
+  color: #fff;
+}
+form .input-field .input:-ms-input-placeholder {
+  color: #fff;
+}
+form .input-field .input::placeholder {
+  color: #fff;
+}
+form .input-field .input:focus + .label, form .input-field .input:valid + .label {
+  top: 0;
+  left: 1em;
+}
+form .input-field.textarea {
+  height: auto;
+}
+form .input-field.textarea .input {
+  resize: vertical;
+  padding: 2em;
+}
+form .input-field .label {
+  position: absolute;
+  top: 30px;
+  left: 1.5em;
+  font-size: 16px;
+  pointer-events: none;
+  background: white;
+  transform: translateY(-50%);
+  padding: 0 0.5em;
+  transition: all 0.3s ease-in-out;
+}
+form .btn-submit {
+  padding: 0.5em 1em;
+  border: none;
+  outline: none;
+  background: black;
+  color: white;
+  font-family: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+  font-weight: bolder;
+  transition: all 250ms ease-in-out;
+  font-size: 0.9rem;
+}
+form .btn-submit:hover {
+  color: black;
+  background: white;
 }
 
 .hero-section {
@@ -634,4 +708,43 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.main-section {
+  margin: 3em 0;
+}
+@media (max-width: 992px) {
+  .main-section .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.main-section__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-section__left__box {
+  padding: 20px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2);
+}
+.main-section__left__box__list {
+  list-style: none;
+}
+.main-section__left__box__list__item {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: flex-start;
+}
+.main-section__left__box__list__item__icon {
+  margin-right: 1em;
+  margin-top: 0.5em;
+}
+
+.map {
+  width: 100%;
+  height: 500px;
 }/*# sourceMappingURL=main.css.map */
